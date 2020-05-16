@@ -1,0 +1,14 @@
+{
+  "sections": [
+    {
+      "name" : "section1",
+      "abstract" : "section1はテストのために作られたセクションであり、運動会には全く関係がない",
+      "articles" : ["test","unko"]
+    },
+    {
+      "name" : "section2",
+      "abstract" : "セクション2であります。",
+      "articles" : ["oho"]
+    }
+  ]
+}
