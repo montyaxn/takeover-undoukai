@@ -5,12 +5,17 @@ export default function Nav(props) {
     props.index.sections.forEach((s) => {
         // sectionごとにarticleのリストを作ってulで囲む
         let alist = s.articles.map((e) => {
-            return <li key={e.name} className={"nav-element"}><a href={"../"+s.name+"/"+e.name+".html"}>{e.name}</a></li>
+            return <li key={e.name} className={"nav-element"}><a href={"../" + s.name + "/" + e.name + ".html"}
+                                                                 className={"nav-element-link"}>{e.name}</a></li>
         });
         slist.push(<Fragment key={s.name}>
-            <a className={"nav-section"} href={"../"+s.name+"/index.html"}>{s.name}</a>
+            <a className={"nav-section"} href={"../" + s.name + "/index.html"}>{s.name}</a>
             <ul className={"nav-list"}>{alist}</ul>
         </Fragment>);
     });
-    return <nav className={"nav"}>{slist}</nav>;
+    return <div className={"nav-wrapper"}>
+        <h1 className={"title"}>運動会引継</h1>
+        <h2 className={"apartment"}>報道係</h2>
+        <nav className={"nav"}>{slist}</nav>
+    </div>;
 }

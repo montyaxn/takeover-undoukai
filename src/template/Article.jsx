@@ -12,10 +12,12 @@ export default function Article(props) {
         <body>
         {props.nav}
         <div className={"content-wrapper"}>
+            <main>
             <article id="article" dangerouslySetInnerHTML={{__html:props.content}}/>
 
             <LinkPrev link={props.next}/>
             <LinkNext link={props.prev}/>
+            </main>
         </div>
         </body>
         </html>

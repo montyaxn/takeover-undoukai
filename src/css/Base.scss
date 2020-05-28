@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.content-wrapper {
+  flex-basis: fit-content;
+  flex-grow: 1;
+}
+
+main{
+  width:90%;
+  max-width: 800px;
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+
+  padding-top:100px;
+}
+
+.link {
+  display: inline-block;
+
+  &-link {
+    color: #5b6e7f;
+    text-decoration: none;
+  }
+}

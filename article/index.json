@@ -3,7 +3,7 @@
     {
       "name" : "section1",
       "abstract" : "section1はテストのために作られたセクションであり、運動会には全く関係がない",
-      "articles" : [{"name":"test"},{"name": "unko"}]
+      "articles" : [{"name":"test"},{"name": "unko"},{"name": "hello"}]
     },
     {
       "name" : "section2",

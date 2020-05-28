@@ -4,8 +4,8 @@ import process from 'process';
 import marked from 'marked';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
-import Article from './template/article.jsx';
-import Abstract from './template/abstract.jsx';
+import Article from './template/Article.jsx';
+import Abstract from './template/Abstract.jsx';
 import Nav from './component/Nav.jsx';
 
 
@@ -94,7 +94,7 @@ function gen_abstracts(index) {
     let nav = <Nav index={index}/>;
     index.sections.forEach(s => {
         let links = s.articles.map(a => {
-            return <li key={a.name}><a href={"../" + s.name + "/" + a.name + ".html"}>{a.name}</a></li>
+            return <li key={a.name}><a href={"../" + s.name + "/" + a.name + ".html"} className={"nav-element-link"}>{a.name}</a></li>
         });
         let page = ReactDOMServer.renderToStaticMarkup(<Abstract nav={nav} s_name={s.name} abstract={s.abstract}
                                                                  links={links}/>);

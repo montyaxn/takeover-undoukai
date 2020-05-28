@@ -1,9 +1,2 @@
+@import "Base";
 @import "Nav";
-
-@media only screen and (min-width: 980px) {
-  .content-wrapper {
-    position: absolute;
-    top: 0;
-    left: 300px;
-  }
-}

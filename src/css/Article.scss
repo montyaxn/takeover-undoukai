@@ -1,26 +1,6 @@
+@import "Base";
 @import "Nav";
 
-body{
- display: flex;
-}
-
-.content-wrapper{
- @media only screen and (min-width: 980px) {
-  flex-basis: fit-content;
- }
-}
-
-.link{
- display: inline-block;
- &-link{
-
- }
-}
-
-#article{
- width:90%;
- max-width: 500px;
- position: relative;
- left:50%;
- transform: translateX(-50%);
+pre{
+  word-break: break-all;
 }
