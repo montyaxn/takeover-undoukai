@@ -7,6 +7,9 @@ body {
 .content-wrapper {
   flex-basis: fit-content;
   flex-grow: 1;
+  box-shadow: -5px 0 4px #ccc;
+  height:100vh;
+  overflow-y: auto;
 }
 
 main{
@@ -20,10 +23,26 @@ main{
 }
 
 .link {
-  display: inline-block;
+  flex-basis: initial;
+  flex-grow: 0;
 
+  &-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+  }
+  &-empty{
+    flex-grow: 1;
+  }
   &-link {
     color: #5b6e7f;
     text-decoration: none;
+  }
+  &-prev{
+    margin-left:0;
+  }
+  &-next{
+    margin-left:auto;
+    margin-right: 0;
   }
 }

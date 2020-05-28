@@ -40,8 +40,8 @@ module.exports = [{
     mode: 'development',
     target: 'node',
     entry: {
-        abstract: "./src/css/abstract.scss",
-        article: "./src/css/article.scss"
+        abstract: "./src/css/Abstract.scss",
+        article: "./src/css/Article.scss"
     },
     output: {
         filename: "[name].js",
