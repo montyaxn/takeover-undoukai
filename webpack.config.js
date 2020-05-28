@@ -1,11 +1,15 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 
-module.exports = {
+module.exports = [{
     mode: 'development',
     target: 'node',
-    entry: "./src/index.js",
+    entry: {
+        main: "./src/index.js",
+    },
     output: {
-        filename: "main.js",
+        filename: "[name].js",
         path: path.resolve(__dirname, "dist"),
     },
     module: {
@@ -28,7 +32,28 @@ module.exports = {
                         presets: ['@babel/preset-env']
                     }
                 }
-            }
+            },
+
         ]
     },
-};
+},{
+    mode: 'development',
+    target: 'node',
+    entry: {
+        abstract: "./src/css/abstract.scss",
+        article: "./src/css/article.scss"
+    },
+    output: {
+        filename: "[name].js",
+        path: path.resolve(__dirname, "build"),
+    },
+    module: {
+        rules: [
+            {
+                test: /\.scss$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+            },
+        ]
+    },
+    plugins: [new FixStyleOnlyEntriesPlugin(),new MiniCssExtractPlugin()],
+}];
