@@ -88,7 +88,6 @@ function save_articles(page, s_name, a_name) {
         if (err) {
             console.log(err);
         }
-        process.exit(1);
     }))
 }
 
@@ -104,7 +103,6 @@ function gen_abstracts(index) {
             if (err) {
                 console.log(err);
             }
-            process.exit(1);
         }))
     });
 }
@@ -119,6 +117,5 @@ function gen_top(index) {
         if (err) {
             console.log(err);
         }
-        process.exit(1);
     }));
 }
