@@ -1,7 +1,7 @@
 import React, {Fragment} from "react";
 import {LinkNext, LinkPrev} from "../component/Button.jsx";
 
-export default function Article(props) {
+export default function ArticlePage(props) {
     return <Fragment>
         <html>
         <head>

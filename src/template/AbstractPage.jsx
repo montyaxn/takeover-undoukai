@@ -1,7 +1,8 @@
 import React from "react";
 import {Fragment} from "react";
+import Abstract from "../component/Abstract.jsx";
 
-export default function Abstract(props) {
+export default function AbstractPage(props) {
     return (
         <Fragment>
             <html>
@@ -14,9 +15,7 @@ export default function Abstract(props) {
             {props.nav}
             <div className={"content-wrapper"}>
                 <main>
-                    <h1>{props.s_name}</h1>
-                    <p>{props.abstract}</p>
-                    <ul>{props.links}</ul>
+                    <Abstract title={props.s_name} abstract={props.abstract} links={props.links}/>
                 </main>
             </div>
             </body>
