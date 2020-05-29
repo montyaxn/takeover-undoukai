@@ -1,9 +1,14 @@
-
 .title {
   color: #242e3e;
   margin-top: 30px;
   margin-left: 20px;
   margin-bottom: 0;
+
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .apartment {
@@ -31,7 +36,7 @@
 
     &::-webkit-scrollbar-track {
       border-radius: 10px;
-      box-shadow: inset 0 0 5px rgba(0, 0, 0, .1);
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
     }
 
     &::-webkit-scrollbar-thumb {
@@ -48,7 +53,7 @@
   }
 
   &-section {
-    padding-left: 20px;
+    padding-left: 15px;
     font-size: 16px;
     font-weight: bold;
     color: #5b6e7f;
@@ -70,6 +75,4 @@
       text-decoration: none;
     }
   }
-
-
 }

@@ -6,6 +6,7 @@ export default function ArticlePage(props) {
         <html>
         <head>
             <meta charSet="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
             <title>{props.s_name + '-' + props.a_name}</title>
             <link href={"../article.css"} rel={"stylesheet"}/>
         </head>
