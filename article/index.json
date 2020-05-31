@@ -9,6 +9,10 @@
       "name" : "section2",
       "abstract" : "セクション2であります。",
       "articles" : [{"name":"oho"}]
+    },{
+      "name":"web開発",
+      "abstract":"web開発のこと、主に使用するツールの紹介と学習の手立て・資料の紹介をする。",
+      "articles":[{"name":"HP作成の目的"},{"name":"サーバーについて"},{"name":"ツールチェインたち"},{"name":"学習について"}]
     }
   ]
 }
