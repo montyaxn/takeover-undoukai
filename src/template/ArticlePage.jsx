@@ -16,9 +16,9 @@ export default function ArticlePage(props) {
             <main>
                 <article id="article" dangerouslySetInnerHTML={{__html: props.content}}/>
                 <div className={"link-wrapper"}>
-                    <LinkPrev link={props.next}/>
+                    <LinkPrev link={props.prev}/>
                     <div className={"link-empty"}> </div>
-                    <LinkNext link={props.prev}/>
+                    <LinkNext link={props.next}/>
                 </div>
             </main>
         </div>
