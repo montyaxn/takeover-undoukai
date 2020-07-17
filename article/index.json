@@ -1,14 +1,14 @@
 {
   "sections": [
     {
-      "name" : "section1",
-      "abstract" : "section1はテストのために作られたセクションであり、運動会には全く関係がない",
-      "articles" : [{"name":"test"},{"name": "unko"},{"name": "hello"}]
+      "name":"広報作業",
+      "abstract":"報道係の広報作業に関すること全般についての説明",
+      "articles":[{"name":"一年の流れ"},{"name":"雑務"},{"name":"会場計画＆外勤"},{"name":"前当日"},{"name":"プログラム・ポスター"},{"name":"SNS"}]
     },
     {
-      "name" : "section2",
-      "abstract" : "セクション2であります。",
-      "articles" : [{"name":"oho"}]
+      "name":"web開発",
+      "abstract":"web開発のこと、主に使用するツールの紹介と学習の手立て・資料の紹介をする。",
+      "articles":[{"name":"HP作成の目的"},{"name":"サーバーについて"},{"name":"ツールチェインたち"},{"name":"色々常識"},{"name":"学習について"}]
     }
   ]
 }

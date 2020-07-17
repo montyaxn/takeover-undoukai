@@ -14,7 +14,7 @@ export default function Nav(props) {
         </Fragment>);
     });
     return <div className={"nav-wrapper"}>
-        <h1 className={"title"}>運動会引継</h1>
+        <h1><a href={"/index.html"}  className={"title"}>運動会引継</a></h1>
         <h2 className={"apartment"}>報道係</h2>
         <nav className={"nav"}>{slist}</nav>
     </div>;
